@@ -8,7 +8,6 @@ import UnstyledButton from '../UnstyledButton';
 import SuperHeader from '../SuperHeader';
 import MobileMenu from '../MobileMenu';
 import VisuallyHidden from '../VisuallyHidden';
-import { ShoppingBag } from 'react-feather';
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
@@ -66,11 +65,11 @@ const MainHeader = styled.div`
   padding: 18px 32px;
   height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
-  border-top: 4px solid ${COLORS.gray[900]};
 
   @media ${QUERIES.tabletAndSmaller} {
     justify-content: space-between;
     align-items: center;
+    border-top: 4px solid ${COLORS.gray[900]};
   }
 
   @media ${QUERIES.phoneAndSmaller} {
@@ -105,7 +104,7 @@ const MobileActions = styled.nav`
 
 // for the search button to be in the middle visually
 const ShoppingBagButton = styled(UnstyledButton)`
-  /* shifting sth without affecting other children */
+  /* shifting sth without affecting other children, and flow layout */
   transform: translateX(-2px);
 `;
 
