@@ -50,7 +50,6 @@ const Header = () => {
         </MobileActions>
         <Filler />
       </MainHeader>
-
       <MobileMenu
         isOpen={showMobileMenu}
         onDismiss={() => setShowMobileMenu(false)}
