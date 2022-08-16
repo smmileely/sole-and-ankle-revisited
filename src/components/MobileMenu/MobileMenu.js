@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { DialogOverlay, DialogContent } from '@reach/dialog';
 
-import { COLORS, QUERIES, WEIGHTS } from '../../constants';
+import { QUERIES, WEIGHTS } from '../../constants';
 
 import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
@@ -74,14 +74,14 @@ const Nav = styled.nav`
 `;
 
 const NavLink = styled.a`
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
   font-weight: ${WEIGHTS.medium};
   text-decoration: none;
   font-size: 1.125rem;
   text-transform: uppercase;
 
   &:first-of-type {
-    color: ${COLORS.secondary};
+    color: var(--color-secondary);
   }
 `;
 
